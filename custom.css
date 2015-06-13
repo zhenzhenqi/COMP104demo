@@ -1,0 +1,200 @@
+#contact-animation {
+    position: absolute;
+}
+/**************landing**************************/
+
+nav {
+    z-index: 10000;
+}
+
+#landing {
+    z-index: 1;
+    position: absolute;
+}
+
+p {
+    font-weight: 400;
+}
+
+.orange {
+    color: rgb(244, 35, 0);
+}
+/**************about page nav******************/
+
+.bg-white {
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+}
+
+.bg-white:hover {
+    background-color: #efefef;
+}
+
+#tagline h3 {
+    padding-left: 40px;
+}
+/***********************navbar and tagline*******************/
+
+.navbar {
+    position: absolute;
+    z-index: 1000;
+    background-color: transparent;
+    border: none;
+    right: 0;
+    padding: 1em;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: black;
+    border-bottom: solid 2px #F42300;
+    border-bottom-color: #F42300;
+    padding-bottom: 4px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #F42300;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #F42300;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:hover {
+    border-color: #F42300;
+    background-color: #F42300;
+}
+/*
+.navbar-default .navbar-toggle:focus{
+    border-color: #F42300;
+    background-color: #F42300;
+}
+
+.navbar-default .navbar-toggle:active{
+    border-color: #F42300;
+    background-color: transparent;
+}
+*/
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #F42300;
+}
+
+#tagline {
+    position: absolute;
+    width: 100vw;
+    padding: 5em;
+    z-index: 100;
+}
+/***********************landing page**************************/
+
+#bg-image {
+    margin: 15px 0;
+    background-image: url(img/thinker.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+#bg-text {
+    /*    background-color: rgba(128, 156, 152, 0.3); */
+    
+    margin-top: 1em;
+    padding: 4em;
+}
+/**************************work page***************************/
+
+#work .hide-title>h5 {
+    opacity: 0;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    color: black;
+    font-size: 1.3em;
+}
+
+#work #portfolio img:hover {
+    -webkit-filter: blur(5px) opacity(0.3);
+}
+
+#work #portfolio img {
+    transition: 1.0s;
+    /*    transition-timing-function: ease-in;*/
+}
+
+#work .bg-orange {
+    background-color: #F00D05;
+    padding: 30px;
+    position: relative;
+    margin: 40px 15px;
+}
+
+#work .bg-black {
+    background: #e6e1d6;
+    padding: 30px;
+    position: relative;
+    margin: 80px 15px;
+}
+
+#work .bg-brown {
+    background-color: #8A543A;
+    padding: 30px;
+    position: relative;
+    margin: 40px 15px;
+}
+
+#work #myCarousel {
+    margin-top: 15px;
+}
+
+#work #myCarousel img {
+    width: 100vw;
+}
+
+#work #portfolio>div {
+    padding: 0;
+}
+/**************************contact page*************************/
+
+#address {
+    padding: 25px;
+}
+
+#address-cell {
+    display: none;
+}
+
+#contact #map {
+    margin-top: 240px !important;
+}
+
+@media (max-width: 767.999999px) {
+    #tagline p {
+        display: none;
+    }
+    #address {
+        display: none;
+    }
+    #address-cell {
+        display: block;
+        padding: 200px 25px 0 170px;
+    }
+    #map {
+        display: none;
+    }
+}
+/********************Test Page********************/
+
+.white {
+    color: white !important;
+}
+
+#time {
+    z-index: 10;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
