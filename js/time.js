@@ -12,9 +12,7 @@ function setup() {
     myVideo.loop(); // set the video to loop and start playing
     myVideo.hide(); // by default video shows up in separate dom 
     // element. hide it and draw it   
-    capture = createCapture(VIDEO);
-    capture.size(window.innerWidth / 4, window.innerHeight / 2);
-    
+
     rectMode(CENTER);
 }
 
