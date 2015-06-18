@@ -12,9 +12,6 @@ var mouseCount = 0;
 // Random seed to control randomness while drawing the tree
 var seed = 5;
 
-var mousePos = [];
-
-
 function setup() {
     //create full width and full height p5 canvas
     var myCanvas = createCanvas(window.innerWidth, 400);
