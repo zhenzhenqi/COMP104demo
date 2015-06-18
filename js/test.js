@@ -8,19 +8,17 @@ function setup() {
 }
 
 function draw() {
-  background(200);
-  translate(200, 200);
-  rect(0, 0, 50, 50);
-  rotate(PI/3.0);
-  rect(0, 0, 50, 50);
-  rotate(PI/3.0);
-  rect(0, 0, 50, 50);
-  rotate(PI/3.0);
-  rect(0, 0, 50, 50);
-  rotate(PI/3.0);
-  rect(0, 0, 50, 50);
-  rotate(PI/3.0);
-  rect(0, 0, 50, 50);
+background(200);
+ellipse(100, 50, 33, 33);  // Left circle
+
+push();  // Start a new drawing state
+strokeWeight(10);
+fill(204, 153, 0);
+translate(150, 0);
+ellipse(0, 50, 33, 33);  // Middle circle
+pop();  // Restore original state
+
+ellipse(200, 50, 33, 33);  // Right circle
 }
 
 function mousePressed() {
