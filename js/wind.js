@@ -8,7 +8,6 @@ var position;
 
 // Perlin noise offset 
 var yoff = 0;
-var mouseCount = 0;
 // Random seed to control randomness while drawing the tree
 var seed = 5;
 
@@ -74,9 +73,7 @@ function mousePressed() {
   seed = millis();
 }
 
-function windowResized() {
-	resizeCanvas(windowWidth, windowHeight);
-}
+
 
 function branch(h, xoff) {
   // thickness of the branch is mapped to its length

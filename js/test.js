@@ -8,6 +8,7 @@ function setup() {
 }
 
 function draw() {
+   
 background(200);
 ellipse(100, 50, 33, 33);  // Left circle
 
