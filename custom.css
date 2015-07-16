@@ -1,6 +1,18 @@
 #contact-animation {
     position: absolute;
 }
+/***********head***************************/
+
+#head-description {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#head-description h1, #head-description p{
+    color: white;
+}
 /**************landing**************************/
 
 nav {
@@ -193,6 +205,6 @@ p {
 }
 
 #time {
-    font-family: serif; 
+    font-family: serif;
     margin: 80px;
 }

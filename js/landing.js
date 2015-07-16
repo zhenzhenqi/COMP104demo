@@ -2,7 +2,7 @@ console.log("landing.js loaded");
 
 var song, analyzer, vol;
 var bugs = []; // array of Jitter objects
-var myX; 
+var myX;
 
 function preload() {
     song = loadSound('WalkingWithHappiness.mp3');
@@ -43,7 +43,7 @@ function draw() {
 
 function mouseDragged() {
     for (var i = 0; i < bugs.length; i++) {
-        bugs[i].x += (mouseX - myX)*random(0,1);  
+        bugs[i].x += (mouseX - myX) * random(0, 1);
     }
 }
 
