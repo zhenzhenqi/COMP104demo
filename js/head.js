@@ -77,7 +77,7 @@ function init() {
 
     
     
-    //model 
+    //load obj file into the scene
     var loader = new THREE.OBJLoader(manager);
     loader.load('model/Smile.obj', function (theHead) {
 

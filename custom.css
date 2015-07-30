@@ -199,12 +199,12 @@ p {
     }
 }
 /********************Test Page********************/
-
-.white {
-    color: white !important;
+#test #time .bg-grey{
+    background-color: rgb(230, 230, 230, 10);
 }
 
-#time {
+#test #time {
     font-family: serif;
     margin: 80px;
 }
+

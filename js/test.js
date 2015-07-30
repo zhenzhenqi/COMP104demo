@@ -1,33 +1,41 @@
-console.log("drawing tests");
+var r;
 
+// Angle and angular velocity, accleration
+var theta;
+var theta_vel;
+var theta_acc;
 
 function setup() {
-    //create full width and full height p5 canvas
-    var myCanvas = createCanvas(400, 400);
-    myCanvas.parent('test');
+  var myCanvas = createCanvas(710, 400);
+  myCanvas.parent('bg-canvas');
+
+  
+  // Initialize all values
+  r = height * 0.45;
+  theta = 0;
+  theta_vel = 0;
+  theta_acc = 0.0001;
 }
 
 function draw() {
-   
-background(200);
-ellipse(100, 50, 33, 33);  // Left circle
-
-push();  // Start a new drawing state
-strokeWeight(10);
-fill(204, 153, 0);
-translate(150, 0);
-ellipse(0, 50, 33, 33);  // Middle circle
-pop();  // Restore original state
-
-ellipse(200, 50, 33, 33);  // Right circle
+  
+  background(0);
+  
+  // Translate the origin point to the center of the screen
+  translate(width/2, height/2);
+  
+  // Convert polar to cartesian
+  var x = r * cos(theta);
+  var y = r * sin(theta);
+  
+  // Draw the ellipse at the cartesian coordinate
+  ellipseMode(CENTER);
+  noStroke();
+  fill(200);
+  ellipse(x, y, 32, 32);
+  
+  // Apply acceleration and velocity to angle 
+  // (r remains static in this example)
+  theta_vel += theta_acc;
+  theta += theta_vel;
 }
-
-function mousePressed() {
-
-}
-
-function windowResized() {
-	resizeCanvas(windowWidth, windowHeight);
-}
-
-
