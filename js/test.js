@@ -6,36 +6,21 @@ var theta_vel;
 var theta_acc;
 
 function setup() {
-  var myCanvas = createCanvas(710, 400);
-  myCanvas.parent('bg-canvas');
+    var myCanvas = createCanvas(400, 400);
+    myCanvas.parent('bg-canvas');
 
-  
-  // Initialize all values
-  r = height * 0.45;
-  theta = 0;
-  theta_vel = 0;
-  theta_acc = 0.0001;
+
+    // Initialize all values
+    r = height * 0.45;
+    theta = 0;
+    theta_vel = 0;
+    theta_acc = 0.0001;
 }
 
 function draw() {
-  
-  background(0);
-  
-  // Translate the origin point to the center of the screen
-  translate(width/2, height/2);
-  
-  // Convert polar to cartesian
-  var x = r * cos(theta);
-  var y = r * sin(theta);
-  
-  // Draw the ellipse at the cartesian coordinate
-  ellipseMode(CENTER);
-  noStroke();
-  fill(200);
-  ellipse(x, y, 32, 32);
-  
-  // Apply acceleration and velocity to angle 
-  // (r remains static in this example)
-  theta_vel += theta_acc;
-  theta += theta_vel;
+    stroke(0);
+    for (i = 0; i < 400; i++) {
+        point(i, 200);
+    }
+
 }

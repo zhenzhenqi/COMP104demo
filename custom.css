@@ -15,10 +15,6 @@
 }
 /**************landing**************************/
 
-nav {
-    z-index: 10000;
-}
-
 #landing {
     z-index: 1;
     position: absolute;
@@ -31,6 +27,10 @@ p {
 .orange {
     color: rgb(244, 35, 0);
 }
+.white{
+    color: rgba(200, 200, 200, 100);
+}
+
 /**************about page nav******************/
 
 .bg-white {
@@ -46,6 +46,9 @@ p {
     padding-left: 40px;
 }
 /***********************navbar and tagline*******************/
+nav {
+    z-index: 10000;
+}
 
 .navbar {
     position: absolute;
@@ -80,17 +83,6 @@ p {
     border-color: #F42300;
     background-color: #F42300;
 }
-/*
-.navbar-default .navbar-toggle:focus{
-    border-color: #F42300;
-    background-color: #F42300;
-}
-
-.navbar-default .navbar-toggle:active{
-    border-color: #F42300;
-    background-color: transparent;
-}
-*/
 
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #F42300;
@@ -106,7 +98,7 @@ p {
 
 #bg-image {
     margin: 15px 0;
-    background-image: url(img/thinker.jpg);
+    background-image: url(img/train.jpg);
     height: 100vh;
     background-size: cover;
 }

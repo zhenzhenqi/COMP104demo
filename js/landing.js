@@ -20,7 +20,7 @@ function setup() {
     // Patch the input to an volume analyzer
     analyzer.setInput(song);
 
-    for (var i = 0; i < 70; i++) {
+    for (var i = 0; i < 40; i++) {
         bugs.push(new Jitter());
     }
 }
@@ -56,7 +56,7 @@ function windowResized() {
 function Jitter() {
     this.x = random(width - 50);
     this.y = random(height);
-    this.r = random(0.05, 0.5);
+    this.r = random(0.05, 0.3);
 
     this.speed = random(0.5, 2);
     this.theta = random(0, 2 * PI) * this.r;
@@ -70,13 +70,13 @@ function Jitter() {
 
     this.display = function () {
         noStroke();
-        fill("rgba(244, 35, 0," + this.alpha.toString() + ")");
+        fill("rgba(255, 255, 255," + this.alpha.toString() + ")");
         ellipse(this.x, this.y, this.r * vol * 200, this.r * vol * 200);
         this.alpha += 0.1;
-        fill("rgba(244, 35, 0," + this.alpha.toString() + ")");
+        fill("rgba(255, 255, 255," + this.alpha.toString() + ")");
         ellipse(this.x, this.y, this.r * vol * 150, this.r * vol * 150);
         this.alpha += 0.1;
-        fill("rgba(244, 35, 0," + this.alpha.toString() + ")");
+        fill("rgba(255, 255, 255," + this.alpha.toString() + ")");
         ellipse(this.x, this.y, this.r * vol * 100, this.r * vol * 100);
         this.alpha = random(0.03, 0.2);
     };
