@@ -5,7 +5,7 @@ var bugs = []; // array of Jitter objects
 var myX;
 
 function preload() {
-    song = loadSound('WalkingWithHappiness.mp3');
+    song = loadSound('Axiom-Sanctum.mp3');
 }
 
 function setup() {
